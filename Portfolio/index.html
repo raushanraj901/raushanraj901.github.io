@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raushan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a5ba336115.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p style="margin: 10px -30px -20px 10px;">Portfolio</p>
+    <div id="header">
+        <div class="contaier">
+            <nav>
+                <h1 style=" font-style: italic;"><span style="color: #ff004f;font-size: 30px;">R</span><span style="font-size: 22px;">aushan</span><span style="color: #ff004f;font-size: 35px;">.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#containerPage">Proficiencies</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#projectPage">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+                <div id="header-data">
+                    <h1>Hi, I'm <span style="color: #ff004f">Raushan Raj</span></h1>
+                    <p style="color: gray; font-style: italic;">Java Backend Developer</p>
+                    <button id="button"><a style="text-decoration: none; color: #fff;" href="./images/Raushan_Raj_Resume.pdf" download class="" >Download Resume</a> </button>
+                </div>
+                <div id="img">
+                    <img id="image" src="./images/20161116_182753.png">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ___________about______________ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="color: gray; padding-top: 20px;">
+                        An aspiring Java Backend Developer, that enjoys 
+                        every part of his work, from working in the 
+                        Backend or FrontEnd, to communicating and 
+                        collaborating, with different people, 
+                        towards a common goal. The very idea 
+                        of CREATING something meaningful, 
+                        keeps me going.  
+                    </p>
+                    <div class="about-titles">
+                        <p class="skills active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="skills" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div id="skills" class="about-contents active-tab">
+                        <ul>
+                            
+                            <li></i><span>JAVA  </span> <i class="fa-brands fa-java"></i><br> Backend Developer</li>
+                            <li><span>JAVA SCRIPT  </span><i class="fa-brands fa-js"></i><br> Frontend Developer</li>
+                            <li><span>HTML5  </span><i class="fa-brands fa-html5"></i><br> Frontend Developer</li>
+                            <li><span>CSS3  </span> <i class="fa-brands fa-css3"></i><br> Frontend Developer</li>
+                            <li><span>DATA STRUCTUE & ALGORITHM  </span><i class="fa-light fa-square-code"></i><br> Problem Solver</li>
+                            <li><span>DBMS </span> <i class="fa-solid fa-database"></i><br> Manage DataBase</li>
+                        </ul>
+                    </div>
+                    <div id="education" class="about-contents">
+                        <ul>
+                            <li><span>2022</span><br>Java Backend Development course at Masai School</li>
+                            <li><span>2020</span><br> B.Tech (Computer Science & Engineergin) <br> from Gulzar Institute of Enginnering & Tech, Khanna</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Proficiencies-------------- -->
+    <div id="containerPage" class="contaier">
+        <h1 class="sub-title">Preficiences</h1>
+        <div class="proficiencies">
+            <div class="text-center">
+                <img src="images//backend.svg" style="max-height: 100px;" class="img-fluid" alt="Back End Developer">
+                <h4>BACKEND DEVELOPMENT</h4>
+                <div>Emotions aren't enough, this is where the Actions are taken</div>
+            </div>
+            <div class="text-center">
+                <img src="images/front-end.svg" style="max-height: 100px;" class="img-fluid" alt="Front End Developer">
+                <h4>FRONTEND DEVELOPMENT</h4>
+                <div>It is an open canvas to express the emotions</div>
+            </div>
+            <div class="text-center">
+                <img src="images//algorithm.svg" style="max-height: 100px;" class="img-fluid" alt="Front End Developer">
+                <h4>DATA STRUCTURES AND ALGORITHM</h4>
+                <div>Actions take proper planning and implementations, in the right quality, quantity and direction</div>
+            </div>
+        </div>  
+    </div>
+    <!-- ------------PROJECTS------------- -->
+    <div id="projectPage" class="project">
+      <h1 class="sub-title">Project</h>
+      <div class="project_div">
+          <div class="project_card">
+            <img src="images/OIP.jpg" class="project_logo" alt="Myntra ">
+            <div class="card-body">
+              <h4>Myntra_Clone</h4>
+              <p class="card-text">The application shows all type cloaths, Jewellery, Beauty products e.t.c
+                there user shortleast by the price and brand and add product to wishlist and also place order and can online payment.
+              </p>
+              <div class="card-stacks">
+                
+                <div class="card-links"> <a href="https://github.com/Gauravkumar03/myntra-website" target="_blank"> GITHUB </a> <a href="https://profound-monstera-29931f.netlify.app/" target="_blank">LIVE </a></div>
+                <div id="project_logo">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+            <div class="project_card">
+                <img src="images\logo-kindmeal.png" class="project_logo" alt="Kindmeal ">
+                <div class="card-body">
+                    <h4>Kindmeal_Clone</h4>
+                    <p class="card-text">The application shows all type cloaths, Jewellery, Beauty products e.t.c
+                    there user shortleast by the price and brand and add product to wishlist and also place order and can online payment.
+                    </p>
+                    <div class="card-stacks">
+                    <div class="card-links"><a href="https://github.com/raushanraj901/Unit_3_Project_kindmeal" target="_blank">GITHUB</a><a href="https://cozy-dieffenbachia-cc5d9c.netlify.app/" target="_blank">LIVE</a></div>
+                    <div id="project_logo">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-sharp fa-solid fa-database"></i>
+                        <i class="fa-solid fa-binary-lock"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------Statistics--------- -->
+    <div id="statistics" class="row">
+        <div class="col offset-lg-3 offset-xl-2"> 
+          <div class="statisticsTitle mb-5">
+            <h1 class="sub-title">Statistics</h>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col d-flex justify-content-around flex-wrap">
+              <div class="individualStat">
+                <div style="color:#ff004f ;">850+</div>
+                <div><h3>Hours</h3> <p style="color: gray;">of Full Stack Coding</p></div>
+              </div>
+  
+              <div class="individualStat">
+                <div style="border: 10px solid #7e2cde; color:#ff004f ;">150+</div>
+                <div><h3>Hackerrank</h3><p style="color: gray;">Problems</p></div>
+              </div>
+  
+              <div class="individualStat">
+                <div style="color:#ff004f ;">100+</div>
+                <div><h3>Git</h3><p style="color: gray;">Commits</p></div>
+              </div>
+  
+              <div class="individualStat">
+                <div style="border: 10px solid #7e2cde; color:#ff004f ;">4+</div>
+                <div><h3>Projects</h3><p style="color: gray;">Done</p></div>
+              </div>
+  
+              
+              <div class="individualStat">
+                <div style="color:#ff004f ;">100+</div>
+                <div><h3>Hours</h3><p style="color: gray;">of Soft Skills Sessions</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+  </div>
+  <!-- Contact Footer -->
+  <footer class="row mt-5" id="contact">
+    <div class="col offset-xl-2 offset-lg-3">
+        <h1 class="sub-title">Contact Me </h1>
+      <div class="container  text-center my-4">
+        <div>Let's Connect</div>
+      
+        <div class="d-flex mx-auto justify-content-center my-2">
+          <div><a href="https://www.linkedin.com/in/raushan-r-409892155" target="_blank" style="color: rgb(165, 138, 138)"><i class="fab fa-linkedin contactIcons"></i>raushan-r-409892155 </a></div>
+          <div class="mx-5"><a href="https://www.hackerrank.com/raushanraj901" target="_blank" style="color: rgb(175, 162, 162)"><i class="fab fa-hackerrank contactIcons"></i>raushanraj901</a></div>
+          <div><a href="https://github.com/raushanraj901" target="_blank" style="color: rgb(170, 165, 165)"><i class="fab fa-github contactIcons"></i>raushanraj901</a></div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-md-center">
+          <div><i class="fas fa-phone-alt"></i> +91-7004066913</div>
+          <div class="ml-md-3"><i class="fas fa-envelope"></i> raushanraj901@gmail.com</div>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+  </footer> 
+</body>
+</html>
+<script>
+    var tablinks = document.getElementsByClassName("skills");
+    var about_contents = document.getElementsByClassName("about-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(about_content of about_contents){
+            about_content.classList.remove("active-tab"); 
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
