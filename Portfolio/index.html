@@ -4,233 +4,624 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raushan</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Raushan Raj portfolio</title>
+    <link rel="shortcut icon" href="./img/icon logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/a5ba336115.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <p style="margin: 10px -30px -20px 10px;">Portfolio</p>
-    <div id="header">
-        <div class="contaier">
-            <nav>
-                <h1 style=" font-style: italic;"><span style="color: #ff004f;font-size: 30px;">R</span><span style="font-size: 22px;">aushan</span><span style="color: #ff004f;font-size: 35px;">.</span></h1>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#containerPage">Proficiencies</a></li>
-                    <li><a href="#projectPage">Project</a></li>
-                    <li><a href="#statistics">Statistics</a></li>
-                    
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" style="color: rgb(132, 26, 153);" class="nav__logo">
+                Raushan
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                   <li class="nav__item">
+                      <a href="#home" class="nav__link active-link">
+                        <i class="ri-home-7-line"></i> Home
+                      </a>  
+                   </li>
+
+                   <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="ri-profile-line"></i> About me
+                        </a>  
+                    </li> 
+                   <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="ri-trophy-line"></i> Skills
+                        </a>  
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="ri-book-open-line"></i> Qualification
+                        </a>  
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="ri-image-line"></i> Projects
+                        </a>  
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#preficiences" class="nav__link">
+                            <i class="ri-terminal-window-fill"></i> Preficiences
+                        </a>  
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#statistics" class="nav__link">
+                            <i class="ri-pie-chart-line"></i> Statistics
+                        </a>  
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="ri-chat-3-line"></i> Contact
+                        </a>  
+                    </li>
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()" ></i>
-            </nav>
-            <div class="header-text">
-                <div id="header-data">
-                    <h1>Hi, I'm <span style="color: #ff004f">Raushan Raj</span></h1>
-                    <p style="color: gray; font-style: italic;">Java Backend Developer</p>
-                    <button id="button"><a style="text-decoration: none; color: #fff;" href="./files/Raushan_Raj_Resume.pdf" download class="" >Download Resume</a> </button>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
                 </div>
-                <div id="img">
-                    <img id="image" src="./images/20161116_182753.png">
-                </div>
-                
             </div>
-        </div>
-    </div>
-    <!-- ___________about______________ -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <h1 class="sub-title">About Me</h1>
-                    <p style="color: gray; padding-top: 20px;">
+
+            <div class="nav__buttons">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i> 
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid section__border">
+                <div class="home__data grid">
+                    <h1 class="home__title">
+                        Hi, I'm Raushan Raj <br>
+                        Java Backend Developer
+                    </h1>
+                    <div class="home__blob grid">
+                        <div class="home__perfil">
+                            <img src="./img/20161116_182753.png" alt="">
+                        </div>
+                        <img src="./img/shape-wawes.svg" alt="" class="home__shape-wawes">
+                        <img src="./img/shape-circle.svg" alt="" class="home__shape-circle">
+                    </div>
+                    <ul class="home__social">
+                        <a href="https://www.linkedin.com/in/raushan-r-409892155" target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/raushanraj901" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                        <a href="https://www.hackerrank.com/raushanraj901" target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-hackerrank"></i>
+                        </a>
+                    </ul>
+                </div>
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            PROFESSIONAL SUMMARY
+                        </h3>
+                        <p class="home__info-description">
+                            Aspiring Java Backend Developer with a
+                            specialization in Java, Spring Boot, SQL, REST
+                            APIs, Git/Github, AWS, HTML, CSS, JavaScript,
+                            Object-oriented, design Self-motivated and
+                            curious, with a keen interest in building usercentric products. Looking forward to honing my
+                            skills in a challenging work environment.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">
+                            CONTACT
+                        </h3>
+                        <p class="home__info-description">
+                            Sector 62, Noida(U.P.) <br>
+                            raushanraj901@gmail.com <br>
+                            +91 7004066913
+                        </p>
+                    </div>
+                </div>
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            HOURS OF CODING
+                        </h3>
+                        <p class="home__info-number">
+                            850+
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">
+                            COMPLETED PROJECTS
+                        </h3>
+                        <p class="home__info-number">
+                            4+
+                        </p>
+                    </div>
+                    <a href="./Raushan_Raj_Resume.pdf" class="resume__button" download class="">Resume <i class="ri-download-line"></i></a>
+
+                </div>
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <h2 class="section__title">About me</h2>
+            <div class="about_container container grid section__border">
+                <div class="about__content">
+                    <h3 class="about__title">
                         An aspiring Java Backend Developer, that enjoys 
                         every part of his work, from working in the 
                         Backend or FrontEnd, to communicating and 
                         collaborating, with different people, 
                         towards a common goal. The very idea 
                         of CREATING something meaningful, 
-                        keeps me going.  
-                    </p>
-                    <div class="about-titles">
-                        <p class="skills active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="skills" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div id="skills" class="about-contents active-tab">
-                        <ul>
-                            
-                            <li></i><span>JAVA  </span> <i class="fa-brands fa-java"></i><br> Backend Developer</li>
-                            <li><span>JAVA SCRIPT  </span><i class="fa-brands fa-js"></i><br> Frontend Developer</li>
-                            <li><span>HTML5  </span><i class="fa-brands fa-html5"></i><br> Frontend Developer</li>
-                            <li><span>CSS3  </span> <i class="fa-brands fa-css3"></i><br> Frontend Developer</li>
-                            <li><span>DATA STRUCTUE & ALGORITHM  </span><i class="fa-light fa-square-code"></i><br> Problem Solver</li>
-                            <li><span>DBMS </span> <i class="fa-solid fa-database"></i><br> Manage DataBase</li>
-                        </ul>
-                    </div>
-                    <div id="education" class="about-contents">
-                        <ul>
-                            <li><span>2022</span><br>Java Backend Development course at Masai School</li>
-                            <li><span>2020</span><br> B.Tech (Computer Science & Engineergin) <br> from Gulzar Institute of Enginnering & Tech, Khanna</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- -----------Proficiencies-------------- -->
-    <div id="containerPage" class="contaier">
-        <h1 class="sub-title">Preficiences</h1>
-        <div class="proficiencies">
-            <div class="text-center">
-                <img src="images//backend.svg" style="max-height: 100px;" class="img-fluid" alt="Back End Developer">
-                <h4>BACKEND DEVELOPMENT</h4>
-                <div>Emotions aren't enough, this is where the Actions are taken</div>
-            </div>
-            <div class="text-center">
-                <img src="images/front-end.svg" style="max-height: 100px;" class="img-fluid" alt="Front End Developer">
-                <h4>FRONTEND DEVELOPMENT</h4>
-                <div>It is an open canvas to express the emotions</div>
-            </div>
-            <div class="text-center">
-                <img src="images//algorithm.svg" style="max-height: 100px;" class="img-fluid" alt="Front End Developer">
-                <h4>DATA STRUCTURES AND ALGORITHM</h4>
-                <div>Actions take proper planning and implementations, in the right quality, quantity and direction</div>
-            </div>
-        </div>  
-    </div>
-    <!-- ------------PROJECTS------------- -->
-    <div id="projectPage" class="project">
-      <h1 class="sub-title">Project</h>
-      <div class="project_div">
-          <div class="project_card">
-            <img src="images/OIP.jpg" class="project_logo" alt="Myntra ">
-            <div class="card-body">
-              <h4>Myntra_Clone</h4>
-              <p class="card-text">The application shows all type cloaths, Jewellery, Beauty products e.t.c
-                there user shortleast by the price and brand and add product to wishlist and also place order and can online payment.
-              </p>
-              <div class="card-stacks">
-                
-                <div class="card-links"> <a href="https://github.com/Gauravkumar03/myntra-website" target="_blank"> GITHUB </a> <a href="https://profound-monstera-29931f.netlify.app/" target="_blank">LIVE </a></div>
-                <div id="project_logo">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-js"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-            <div class="project_card">
-                <img src="images\logo-kindmeal.png" class="project_logo" alt="Kindmeal ">
-                <div class="card-body">
-                    <h4>Kindmeal_Clone</h4>
-                    <p class="card-text">The application shows all type cloaths, Jewellery, Beauty products e.t.c
-                    there user shortleast by the price and brand and add product to wishlist and also place order and can online payment.
-                    </p>
-                    <div class="card-stacks">
-                    <div class="card-links"><a href="https://github.com/raushanraj901/Unit_3_Project_kindmeal" target="_blank">GITHUB</a><a href="https://cozy-dieffenbachia-cc5d9c.netlify.app/" target="_blank">LIVE</a></div>
-                    <div id="project_logo">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-sharp fa-solid fa-database"></i>
-                        <i class="fa-solid fa-binary-lock"></i>
-                    </div>
+                        keeps me going.
+                    </h3>
+                </div> 
+                 
+                <!-- github section -->
+                <div class="container">
+                    <h1 class="title">Github Status</h1>
+                    <div class="github-stats-list">
+                        <div class="github-stat">
+                            <img
+                            src="https://github-readme-streak-stats.herokuapp.com/?user=raushanraj901&theme=indian-flag"
+                            alt="Github Contributions"
+                            />
+                        </div>
+                        <div class="github-stat">
+                            <img
+                            src="https://github-readme-stats.vercel.app/api?username=raushanraj901&theme=flag-india&show_icons=true&count_private=true"
+                            alt="Github Stats"
+                            />
+                        </div>
+                        <div class="github-stat">
+                            <img
+                            src="https://activity-graph.herokuapp.com/graph?username=raushanraj901&bg_color=ffffff&color=000080&line=138808&point=ff9933&area=true"
+                            alt="Github Graph"
+                            />
+                        </div>
+                        <div class="github-stat">
+                            <h4 class="mb-0" style="text-align: center; color: #000">
+                            Raushan Raj's contribution calendar
+                            </h4>
+                            <img
+                            src="https://ghchart.rshah.org/raushanraj901"
+                            alt="SumitKDSarkar"
+                            style="width: 100%; height: auto; margin-top: 5vh; color: green"
+                            />
+                            <!-- <img src="https://activity-graph.herokuapp.com/calender?username=SumitKDSarkar&bg_color=ffffff&color=000080&line=138808&point=ff9933&area=true" -->
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-    </div>
-    <!-- -------Statistics--------- -->
-    <div id="statistics" class="row">
-        <div class="col offset-lg-3 offset-xl-2"> 
-          <div class="statisticsTitle mb-5">
-            <h1 class="sub-title">Statistics</h>
-          </div>
-
-          <div class="row mb-5">
-            <div class="col d-flex justify-content-around flex-wrap">
-              <div class="individualStat">
-                <div style="color:#ff004f ;">850+</div>
-                <div><h3>Hours</h3> <p style="color: gray;">of Full Stack Coding</p></div>
-              </div>
-  
-              <div class="individualStat">
-                <div style="border: 10px solid #7e2cde; color:#ff004f ;">150+</div>
-                <div><h3>Hackerrank</h3><p style="color: gray;">Problems</p></div>
-              </div>
-  
-              <div class="individualStat">
-                <div style="color:#ff004f ;">100+</div>
-                <div><h3>Git</h3><p style="color: gray;">Commits</p></div>
-              </div>
-  
-              <div class="individualStat">
-                <div style="border: 10px solid #7e2cde; color:#ff004f ;">4+</div>
-                <div><h3>Projects</h3><p style="color: gray;">Done</p></div>
-              </div>
-  
-              
-              <div class="individualStat">
-                <div style="color:#ff004f ;">100+</div>
-                <div><h3>Hours</h3><p style="color: gray;">of Soft Skills Sessions</p></div>
-              </div>
-              
-            </div>
-            
-          </div>
-          <img style="text-align: center; border: 1px solid #ff004f; margin: 25px 50px; border-radius: 10px;" src="images\git.png" alt="">
-        </div>
-       
-  </div>
-  <!-- Contact Footer -->
-  <footer class="mt-5" id="contact">
-    <div class="offset-xl-2 offset-lg-3">
-        <h1 class="sub-title">Contact Me </h1>
-      <div class=" text-center my-4">
-        <h4>Let's Connect</h4>
       
-        <div class="mx-auto justify-content-center my-2">
-          <div><a href="https://www.linkedin.com/in/raushan-r-409892155" target="_blank" style="color: rgb(165, 138, 138)"><i class="fab fa-linkedin contactIcons"></i>raushan-r-409892155 </a></div>
-          <div class="mx-5"><a href="https://www.hackerrank.com/raushanraj901" target="_blank" style="color: rgb(175, 162, 162)"><i class="fab fa-hackerrank contactIcons"></i>raushanraj901</a></div>
-          <div><a href="https://github.com/raushanraj901" target="_blank" style="color: rgb(170, 165, 165)"><i class="fab fa-github contactIcons"></i>raushanraj901</a></div>
+
+            </div>
+        </section>
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <div class="skills_container container grid section__border">
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-braces-line"></i> Backend Developer
+                    </h3>
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            
+                            <h3 class="skills__name">JAVA</h3>
+                            <span class="skills__subtitle">Advance</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img style="width: 70px;" src="./img/springio-ar21.svg" alt="skills image">
+                            </div>
+                            
+                            <h3 class="skills__name">Spring Boot</h3>
+                            <span class="skills__subtitle">Advance</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img style="width: 50px;" src="./img/mysql-official.svg" alt="skills image">
+                            </div>
+                            
+                            <h3 class="skills__name">SQL</h3>
+                            <span class="skills__subtitle">Adavance</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <i class="fa-brands fa-git-alt"></i>
+                            </div>
+                            
+                            <h3 class="skills__name">Git</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-braces-line"></i> Frontend Developer
+                    </h3>
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="./img/html-1.svg" alt="skills image">
+                            </div>
+                            
+                            <h3 class="skills__name">HTML</h3>
+                            <span class="skills__subtitle">Advance</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="./img/css-3.svg" alt="skills image">
+                            </div>
+                            
+                            <h3 class="skills__name">CSS</h3>
+                            <span class="skills__subtitle">Advance</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="./img/logo-javascript.svg" alt="skills image">
+                            </div>
+                            
+                            <h3 class="skills__name">JavaScript</h3>
+                            <span class="skills__subtitle">Advance</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <i class="fa-brands fa-git-alt"></i>
+                            </div>
+                            
+                            <h3 class="skills__name">Git</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">Education & Certifications</span>
+            <div class="qualification__container container grid section__border">
+                <div class="qualification__content">
+                    <h3 class="qualification__title">
+                        <i class="ri-pencil-ruler-2-line"></i> Education 
+                    </h3>
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">
+                                Full Stack Web Development
+
+                            </h3>
+                            <span class="qualification__country"> Masai School, Bangalore</span><br>
+                            <span class="qualification__year">February 2022 - Present</span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__name">
+                                B.Tech (Computer Science & Engineering)
+
+                            </h3>
+                            <span class="qualification__country">Gulzar Institute of Engineering & Technology,
+                                Khanna
+                                </span><br>
+                            <span class="qualification__year">August 2014 - July 2020</span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__name">
+                                Class 12 (Science)
+                            </h3>
+                            <span class="qualification__country">Dr. Ganga Rani Sinha College, Nawada
+                            </span><br>
+                            <span class="qualification__year">May 2012 - June 2014</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qualification__content">
+                    <h3 class="qualification__title">
+                        <i class="ri-award-fill"></i> Certifications
+                    </h3>
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">
+                                Android
+                            </h3>
+                            <span class="qualification__country">Numitech Solutions, Ludhiana
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__name">
+                                Python
+                            </h3>
+                            <span class="qualification__country">Numitech Solutions, Ludhiana
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__name">
+                                C, C++
+                            </h3>
+                            <span class="qualification__country">GGI, Ludhiana
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__name">
+                                HTML, CSS
+                            </h3>
+                            <span class="qualification__country">GGI, Ludhiana
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/shape-circle.svg" alt="qualification image" class="qualification__img">
+        </section>
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">Most recent work</span>
+            <div class="container section__border">
+                <div class="projects_container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="projects__content swiper-slide">
+                            <img src="./img/project1.png" alt="project img" class="projects__img">
+                            <div>
+                                <span class="projects__subtitle">Ecommerce website</span>
+                                <h1 class="projects__title">Myntra Clone</h1>
+                                <div class="projects__show">
+                                    <div>
+                                        <a href="#" class="projects__button">
+                                            GitHub <i class="ri-github-line"></i>
+                                        </a> 
+                                    </div>
+                                    <div>
+                                        <a href="#" class="projects__button">
+                                            View demo <i class="ri-arrow-right-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tech_stack">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__content swiper-slide">
+                            <img src="./img/project2.png" alt="project img" class="projects__img">
+                            <div>
+                                <span class="projects__subtitle">Malaysia's startup</span>
+                                <h1 class="projects__title">Kindmeal Clone</h1>
+                                <div class="projects__show">
+                                    <div>
+                                        <a href="#" class="projects__button">
+                                            GitHub <i class="ri-github-line"></i>
+                                        </a> 
+                                    </div>
+                                    <div>
+                                        <a href="#" class="projects__button">
+                                            View demo <i class="ri-arrow-right-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tech_stack">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                    <i class="fa-sharp fa-solid fa-database"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="preficiences section" id="preficiences">
+            <h2 class="section__title">Preficiences</h2>
+            <span class="section__subtitle">My strength</span>
+            <div class="preficiences__container container grid section__border">
+                <div class="preficiences__card">
+                    <i class="ri-code-box-line"></i>
+                    <h2 class="preficiences__title">
+                        Java BackEnd <br> Developer
+                    </h2>
+                    <p class="preficiences__description">
+                        As a Java backend developer, 
+                        Will be responsible for developing 
+                        and maintaining the server-side of 
+                        applications. This will require them 
+                        to have a strong understanding of Java 
+                        and related frameworks, as well as a 
+                        variety of tools and systems. 
+                    </p>
+                </div>
+                <div class="preficiences__card">
+                    <i class="ri-code-line"></i>
+                    <h2 class="preficiences__title">
+                        FrontEnd <br> Developer
+                    </h2>
+                    <p class="preficiences__description">
+                        A front-end developer uses web languages like HTML, 
+                        CSS, DOM, and JavaScript to create websites and web 
+                        applications for users. 
+                    </p>
+                </div>
+                <div class="preficiences__card">
+                    <i class="ri-macbook-line"></i>
+                    <h2 class="preficiences__title">
+                        Full Stack Web <br> Developer
+                    </h2>
+                    <p class="preficiences__description">
+                        An engineer or developer who works on 
+                        both the front end (client-side) and 
+                        the back end (server-side) of a website 
+                        or application is called a full-stack developer. 
+                        They may handle projects involving databases, 
+                        APIs, or designing user-facing websites, 
+                        as well as interacting with clients during 
+                        development.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="statics section" id="statics">
+            <h2 class="section__title">Statics</h2>
+            <span class="section__subtitle">My contribution</span>
+            <div class="statics__container container grid section__border">
+                <div class="statics__info">
+                    <div class="statics__data">
+                        <div class="statics__blob">
+                            <h2>850+</h2>
+                        </div>
+                        <h3 class="statics__name">Hours</h3>
+                        <span class="statics__subtitle">Of Full Stack Coding</span>
+                    </div>
+
+                    <div class="statics__data">
+                        <div class="statics__blob">
+                            <h2>150+</h2>
+                        </div>
+                        <h3 class="statics__name">Hackerrank</h3>
+                        <span class="statics__subtitle">Problems solved</span>
+                    </div>
+                    <div class="statics__data">
+                        <div class="statics__blob">
+                            <h2>100+</h2>
+                        </div>
+                        <h3 class="statics__name">Git</h3>
+                        <span class="statics__subtitle">Commits</span>
+                    </div>
+                    <div class="statics__data">
+                        <div class="statics__blob">
+                            <h2>4+</h2>
+                        </div>
+                        <h3 class="statics__name">Projects</h3>
+                        <span class="statics__subtitle">Done</span>
+                    </div>
+                    <div class="statics__data">
+                        <div class="statics__blob">
+                            <h2>100+</h2>
+                        </div>
+                        <h3 class="statics__name">Hours</h3>
+                        <span class="statics__subtitle">Of Soft Skills Sessions</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+            <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-chat-3-line"></i>Talk to me
+                    </h3>
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">Email </span>
+                            <span class="contact__data-info">raushanraj901@gmail.com </span>
+                        </div>
+                        <div class="contact__data">
+                            <span class="contact__data-title">Twitter</span>
+                            <a href="https://twitter.com/ER_R_R" target="_blank" class="contact__button">
+                                Let's connect <i class="ri-twitter-line"></i>
+                            </a>
+                        </div>
+                        <div class="contact__data">
+                            <span class="contact__data-title">Whatsapp</span>
+                            <a href="https://api.whatsapp.com/send?phone=917004066913&text=Hello, more information!" target="_blank" class="contact__button">
+                                Write me <i class="ri-whatsapp-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-send-plane-line"></i> Write your message
+                    </h3>
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Name</label>
+                            <input type="text" name="user_name" required placeholder="Write your name" class="contact__form-input" id="contact-name">
+                        </div>
+                        
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Mail</label>
+                            <input type="email" name="user_email" required placeholder="Write your email" class="contact__form-input" id="contact-email">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Messages</label>
+                            <textarea name="user_message" placeholder="Write your messages" id="contact-message" class="contact__form-input"></textarea>
+                        </div>
+                        <p class="contact__status" id="contact-status"></p>
+                        <button type="submit" class="contact__button">
+                            Submit <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Raushan</h1>
+            <p>Java Backend Developer</p>
+            <ul class="footer__list">
+                <li>
+                    <a href="#home" class="footer__link">Home</a>
+                </li>
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+            <ul class="footer__social">
+                <a href="https://www.linkedin.com/in/raushan-r-409892155/" target="_blank" class="footer__social-link">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+                <a href="https://github.com/raushanraj901" target="_blank" class="footer__social-link">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class="ri-link"></i>
+                </a>
+            </ul>
+            <span class="footer__copy">
+               Created by Raushan Raj | &#169; 2022 All copyright reserved. 
+            </span>
         </div>
-        <div class="flex-column flex-md-row justify-content-md-center">
-          <div><i class="fas fa-phone-alt"></i> +91-7004066913</div>
-          <div class="ml-md-3"><i class="fas fa-envelope"></i> raushanraj901@gmail.com</div>
-        </div>
-      </div>
-      <!--  -->
-    </div>
-  </footer> 
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 </body>
 </html>
-<script>
-    var tablinks = document.getElementsByClassName("skills");
-    var about_contents = document.getElementsByClassName("about-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(about_content of about_contents){
-            about_content.classList.remove("active-tab"); 
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-<script>
-  var sidemenu = document.getElementById("sidemenu");
-  function openmenu(){
-    sidemenu.style.right = "0";
-  }
-  function closemenu(){
-    sidemenu.style.right = "-200px";
-  }
-</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/scrollreveal.min.js"></script>
