@@ -115,7 +115,7 @@ body.dark-theme {
 }
 .dark-theme #resume_navbar{
     
-    background-color: hsl(207, 4%, 15%);
+    background-color: var(--body-color);
     color: var(--title-color);
 }
 .dark-theme .home__social-link{
@@ -234,6 +234,7 @@ body.dark-theme {
     justify-content: center;
     gap: 2rem 3rem;
 }
+
 .nav__link{
     display: flex;
     flex-direction: column;
@@ -263,7 +264,7 @@ svg{
 #resume_navbar{
     color: var(--title-color);
     border:white;
-    background-color: (207, 4%, 32%,);
+    background-color: var(--body-color);
     margin-top: 0px;
 }
 .nav__logo{
@@ -1122,7 +1123,7 @@ svg{
     
     .home{
         font-size: var(--tiny-font-size);
-        width: 90%;
+        margin: auto;
     }
     .header{
         top: 0;
@@ -1134,11 +1135,9 @@ svg{
         height: calc(var(--header-height) + 1.5rem);
         box-shadow: none;
         border-radius: 0;
-        column-gap: 3rem;
-        margin-inline: 1.5rem;
-        
+        column-gap: 1rem;
         background-color: var(--body-color);
-        padding: 0;
+        /* padding: 0; */
     }
     .nav__link i,
     .nav__toggle,
@@ -1147,20 +1146,21 @@ svg{
     }
     .nav__menu{
         height: 0;
-         width: initial;
-         margin-left: auto;
-         background-color: var(--body-color);
-         transition: background .4s;
+        width: initial;
+        margin-left: auto;
+        background-color: var(--body-color);
+        transition: background .4s;
     }
     .nav__list{
         display: flex;
-        column-gap: 3rem;
+        column-gap: 2rem;
     }
     .nav__item{
         padding-top: 1.4rem;
     }
     .nav__link{
        font-size: var(--normal-font-size); 
+       
     }
     .dark-theme .nav,
     .dark-theme .nav__menu{
