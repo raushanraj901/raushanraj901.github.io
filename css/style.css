@@ -146,7 +146,7 @@ body.dark-theme {
   
 .grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem;
 }
   
 .section {
@@ -224,7 +224,8 @@ body.dark-theme {
     }
 }
 .nav__list{
-    grid-template-columns: repeat(3,max-content);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
     gap: 2rem 3rem;
 }
@@ -363,6 +364,28 @@ svg{
     padding:0 10rem;
     margin-top: 2rem;
 }
+.github__status{
+    margin-top: 5rem;
+}
+.github__list{
+    display: flex;
+    column-gap: 1rem;
+    width: 90%;
+    margin: auto;
+}
+.github__graph{
+    width: 90%;
+    margin: auto;
+}
+.github__calendar{
+    margin-top: 2rem;
+    border-radius: 20px;
+}
+.github__calendar img{
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+
 .resume__button{
     background-color: var(--text-color-light);
     margin-top: 3rem;
@@ -851,9 +874,30 @@ svg{
     bottom: 7.5rem;
 }
 
-@media screen and (max-width: 340px){
+.nav{
+    width: 80%;
+    background-color:bisque
+}
+@media screen and (max-width: 339.99px){
+    
+    .nav{
+        margin: 0 auto;
+    }
+    .about__title{
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .home__info,
+    .about__content{
+        width: 73%;
+        margin: auto;
+    }
     .container{
         margin-inline: 1rem;
+    }
+    .home{
+        font-size: var(--tiny-font-size);
+        width: 90%;
     }
     .nav__menu{
         padding-bottom: 4rem;
@@ -864,21 +908,29 @@ svg{
     .about__content{
         padding: 0;
     }
+    .github__list,
     .statics__info,
     .skills__info{
-        grid-template-columns: repeat(2,1fr);
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
     .projects__img{
-        width: 200px;
+        width: 65%;
         justify-self: center;
+    }
+    .projects_container{
+        width: 95%;
     }
     .projects_container .swiper-button-prev{
         left: -.9rem;
-        top: 3.2rem;
+        top: 2.5rem;
     }
     .projects_container .swiper-button-next{
         right: -.9rem;
-        top: 3.2rem;;
+        top: 2.5rem;;
+    }
+    .preficiences__card{
+        width: 95%;
     }
     .tech_stack{
         justify-content: center;
@@ -892,14 +944,99 @@ svg{
     .projects__button{
         margin-top: 2rem;
     } 
+    .footer__list{
+        column-gap: .5rem;
+    }
+}
+@media screen and (min-width: 340px){
+    .nav__menu{
+        width: 380px;
+    }
+    
+    .about__title{
+        margin-top: 2rem;
+        text-align: left;
+    }
+    .home__info,
+    .about__content{
+        width: 73%;
+        margin: auto;
+    }
+    .container{
+        margin-inline: 1rem;
+    }
+    .nav__menu{
+        padding-bottom: 4rem;
+    }
+    .nav__list{
+        gap: 1rem 1.25rem;
+    }
+    .about__content{
+        padding: 0;
+    }
+    .github__list{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .statics__info,
+    .skills__info{
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .projects__img{
+        width: 200px;
+        justify-self: center;
+    }
+    .projects_container .swiper-button-prev{
+        left: 1rem;
+        top: 3.2rem;
+    }
+    .projects_container .swiper-button-next{
+        right: 1rem;
+        top: 3.2rem;;
+    }
+    .tech_stack{
+        justify-content: center;
+        column-gap: 1rem;
+        margin-top: 2rem;
+    }
+    .qualification__container{
+        width: 90%;
+    }
+    .qualification__info{
+        padding-left: 5rem;
+    }
+    .projects__show{
+        display:block;
+        text-align: center;
+    }
+    .projects__button{
+        margin-top: 2rem;
+    } 
+    .contact__content{
+        width: 80%;
+        margin: auto;
+    }
 }
 @media screen and (min-width: 576px){
-    .nav,
+    
     .nav__menu{
         width: 380px;
     }
     .nav{
         margin: 0 auto;
+    }
+    .about__title{
+        margin-top: 2rem;
+        text-align: left;
+    }
+    .home__info,
+    .github__list,
+    .github__graph,
+    .about__content{
+        width: 73%;
+        margin: auto;
     }
     .statics__info,
     .skills__info{
@@ -910,76 +1047,81 @@ svg{
         overflow: hidden;
     }
     .projects_container .swiper-button-prev{
-        left: 1rem;
-        top: 8rem;
+        left: 2rem;
+        top: 4rem;
     }
     .projects_container .swiper-button-next{
-        right: 1rem;
-        top: 8rem;;
+        right: 2rem;
+        top: 4rem;;
     }
 }
 @media screen and (min-width: 767px){
-    .home__container{
-        grid-template-columns: 1fr 2fr 1fr;
-    }
-    .home__data{
-        order: 2;
-    }
-    .home__info:nth-child(3){
-        order: 3;
-        text-align: right;
-    }
-    .home__info{
-        margin-top: 10rem;
-    }
-    .home__info-description{
-        padding-right: 0;
-    }
+
     .skills__container,
-    .qualification__container,
-    .preficiences__container,
     .contact__container{
-        grid-template-columns: repeat(2, max-content);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .github__list,
+    .github__graph
+    {
+        width: 73%;
+        margin: auto;
     }
     .skills__container,
     .preficiences__container{
-        column-gap: 5rem;
+        column-gap: 3rem;
     }
+    .preficiences__container,
     .qualification__container{
+        display: flex;
         justify-content: center;
-        column-gap: 10rem;
+        column-gap: 2rem;
+    }
+    .projects__img{
+        width: 500px;
     }
     
     .projects_container .swiper-button-prev{
         left: 2rem;
-        top: 7rem;
+        top: 8rem;
     }
     .projects_container .swiper-button-next{
         right: 2rem;
-        top: 7rem;;
-    }
-    .contact__form{
-        width: 360px;
+        top: 8rem;;
     }
     .contact__container{
-        justify-content: center;
-        column-gap: 8rem;
+        column-gap: 2rem;
+
     }
+    .contact__content{
+        margin-top: 0;
+        width: 90%;
+    }
+    
 }
 @media screen and (min-width: 1023px){
+    
+    .home{
+        font-size: var(--tiny-font-size);
+        width: 90%;
+    }
     .header{
         top: 0;
         bottom: initial;
-        background-color: var(--body-color);
         transition: .45; 
     }
     .nav{
-        width: initial;
+        width: 100%;
         height: calc(var(--header-height) + 1.5rem);
         box-shadow: none;
         border-radius: 0;
         column-gap: 3rem;
         margin-inline: 1.5rem;
+        
+        background-color: var(--body-color);
         padding: 0;
     }
     .nav__link i,
@@ -988,6 +1130,7 @@ svg{
         display: none;
     }
     .nav__menu{
+        height: 0;
          width: initial;
          margin-left: auto;
          background-color: var(--body-color);
@@ -996,6 +1139,9 @@ svg{
     .nav__list{
         display: flex;
         column-gap: 3rem;
+    }
+    .nav__item{
+        padding-top: 1.4rem;
     }
     .nav__link{
        font-size: var(--normal-font-size); 
@@ -1028,6 +1174,18 @@ svg{
     }
     .dark-theme .bg-header{
         box-shadow: 0 4px 20px hsla(207, 24%, 8%, .6); 
+    }
+    .statics__info{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .contact__container{
+        column-gap: 2rem;
+
+    }
+    .contact__content{
+        margin-top: 0;
+        width: 70%;
     }
 }
 
