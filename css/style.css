@@ -266,7 +266,7 @@ svg{
     color: var(--title-color);
     border:white;
     background-color: var(--body-color);
-    margin-top: 0px;
+    margin-top: 1rem;
 }
 .nav__logo{
     display: flex;
@@ -583,6 +583,10 @@ svg{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
 }
+.discrption{
+    margin: auto;
+    width: 60%;
+}
 .projects__title{
     font-size: var(--h2-font-size);
     margin-bottom: 1.25rem;
@@ -590,6 +594,8 @@ svg{
 }
 .projects__show,
 .tech_stack{
+    margin: auto;
+    width: 60%;
     display: flex;
     justify-content: space-between;
 }
