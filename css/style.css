@@ -113,6 +113,11 @@ body.dark-theme {
 .dark-theme .testimonial__img{
     filter: invert(1);
 }
+.dark-theme #resume_navbar{
+    
+    background-color: hsl(207, 4%, 15%);
+    color: var(--title-color);
+}
 .dark-theme .home__social-link{
     color: var(--title-color);
 }
@@ -253,6 +258,17 @@ svg{
     bottom: .7rem;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+#resume_navbar{
+    color: var(--title-color);
+    border:white;
+    background-color: (207, 4%, 32%,);
+    margin-top: 0px;
+}
+.nav__logo{
+    display: flex;
+    margin-left: -10px;
 }
 .show-menu{
     bottom: 2rem;
@@ -1163,6 +1179,9 @@ svg{
     .home__title{
         font-size: 2.25rem;
     }
+    .projects__show{
+        display: flex;
+    }
     .scrollup{
         right: 3rem;
     }
@@ -1181,7 +1200,6 @@ svg{
     }
     .contact__container{
         column-gap: 2rem;
-
     }
     .contact__content{
         margin-top: 0;
@@ -1205,11 +1223,6 @@ svg{
         font-size: var(--biggest-font-size);
     }
     
-    .home__info{
-        grid-template-rows: repeat(3, 130px);
-        row-gap: 4rem;
-        margin-top: 16rem;
-    }
     .statics__container,
     .skills__container{
         column-gap: 10rem;
@@ -1238,6 +1251,9 @@ svg{
     }
     .qualification__title i{
         font-size: 1.25rem;
+    }
+    .qualification__info{
+        margin-left: -7.5rem;
     }
     .qualification__name{
         font-size: var(--h3-font-size);
