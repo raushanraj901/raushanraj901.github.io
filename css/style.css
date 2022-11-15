@@ -587,6 +587,9 @@ svg{
     margin: auto;
     width: 60%;
 }
+.discrption h4{
+    margin-bottom: 1rem;
+}
 .projects__title{
     font-size: var(--h2-font-size);
     margin-bottom: 1.25rem;
