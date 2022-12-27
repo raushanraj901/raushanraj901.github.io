@@ -101,11 +101,13 @@ body.dark-theme {
     --body-color: hsl(207, 4%, 10%);
     --container-color: hsl(207, 4%, 12%);
 }
+
 .dark-theme .nav,
 .dark-theme .nav__menu,
 .dark-theme .scrollup{
     background-color: hsl(207, 4%, 95%);
     box-shadow: 0 4px 20px hsla(207, 24%, 8%, .4);
+    color: brown;
 }
 
 .dark-theme .home__shape-wawes,
