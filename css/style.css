@@ -428,10 +428,8 @@ svg{
 }
 .resume__button:hover i,
 .resume__button:hover{
-    background-color: rgb(29, 78, 78);
     color: rgb(248, 248, 246);
     padding: auto;
-    border: 1px solid greenyellow;
     border-radius: 10px;
 }
 
@@ -597,16 +595,16 @@ svg{
     margin-bottom: 1.25rem;
     margin: .5rem 0 1.25rem;
 }
-.projects__show,
-.tech_stack{
+.projects__show{
     margin: auto;
     width: 60%;
     display: flex;
     justify-content: space-between;
 }
 .tech_stack{
-    justify-content: center;
-    column-gap: 1rem;
+    margin: auto;
+    width: 60%;
+    justify-content: left;
 }
 .projects__button{
     display: inline-flex;
