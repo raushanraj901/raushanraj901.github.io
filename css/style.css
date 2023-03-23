@@ -269,6 +269,7 @@ svg{
     border:white;
     background-color: var(--body-color);
     margin-top: 1rem;
+    padding-right: 2rem;
 }
 .nav__logo{
     display: flex;
