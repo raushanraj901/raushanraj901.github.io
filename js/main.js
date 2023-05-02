@@ -136,12 +136,12 @@ let swiperProjects = new Swiper(".projects_container", {
 
  window.addEventListener('scroll', scrollHelder)
 
- const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
- })
+//  const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '60px',
+//     duration: 2500,
+//     delay: 400,
+//  })
 
  sr.reveal(`.home__data, .projects_container, .footer__container`)
  sr.reveal(`home__info div`, {delay: 600, origin: 'bottom',interval: 100})
