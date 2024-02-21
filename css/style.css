@@ -179,13 +179,14 @@ body.dark-theme {
   
 .section__subtitle {
     display: block;
-    font-size: var(--small-font-size);
+    font-size: 18px;
     color: var(--text-color-light);
     margin-bottom: 3rem;
 }
   
 .main {
     overflow: hidden; /* For animation */
+    text-align: justify;
 }
 
 .header{
@@ -583,7 +584,7 @@ svg{
     border: 1px solid rgb(247, 202, 119);
 }
 .projects__subtitle{
-    font-size: var(--small-font-size);
+    font-size: var(--h3-font-size);
     color: var(--text-color-light);
 }
 .discrption{
@@ -594,7 +595,7 @@ svg{
     margin-bottom: 1rem;
 }
 .projects__title{
-    font-size: var(--h2-font-size);
+    font-size: var(--h3-font-size);
     margin-bottom: 1.25rem;
     margin: .5rem 0 1.25rem;
 }
