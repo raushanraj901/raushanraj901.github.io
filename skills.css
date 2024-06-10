@@ -1,0 +1,71 @@
+
+body #skills1>#skills-container1>div {
+    overflow-x: hidden;
+  }
+
+  body #skills1{
+    overflow-x: hidden;
+  }
+
+#skills1 {
+    width: 100%;
+    margin: auto;
+}
+
+#skills1 h1 {
+    color: rgb(237, 176, 53);
+    text-align: center;
+}
+
+#skills1>#skills-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#skills1>#skills-container1>div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+}
+
+#skills1>#skills-container1>div:hover {
+    transform: scale(1.05);
+    background-color: rgb(237, 176, 53);
+    color: white;
+}
+
+#skills1>#skills-container1>div>img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+body #skills1>#skills-container1>div {
+    overflow-x: hidden;
+  }
+
+  #skills1>#skills-container1>div{
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    transform: translateX(400%);
+    transition: transform 1000ms ease-in-out;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  #skills1>#skills-container1>div:nth-child(even){
+    transform: translateX(-400%);
+  }
+  
+  
+  #skills1>#skills-container1>div.show{
+    transform : translateX(0);
+  }
