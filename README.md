@@ -19,22 +19,22 @@
 <h4> NavBar </h4>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px" >
 
-  <img style="width: 100%;" src="https://miro.medium.com/max/720/1*VUD2A57Ote8rfy_d8KyVRw.png" alt="">
+  <img style="width: 100%;" src="./src/ss1.png" alt="">
   
  </div>
 
 <h4> Skills Part</h4>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px" >
 
-  <img style="width: 100%;" src="https://miro.medium.com/max/720/1*RXyS6UCeGv7i5Hj-NEUIyA.png" alt="">
+  <img style="width: 100%;" src="./src/ss2.png" alt="">
   
  </div>
  
  <h4> Education and Projects Part </h4>
  <div style="display: grid; grid-template-columns: repeat(2,1fr); gap:20px" >
 
-  <img style="width: 100%;" src="https://miro.medium.com/max/720/1*NCm8NrLwFgigxwYpN1sETg.png" alt="">
-  <img style="width: 100%;" src="https://miro.medium.com/max/720/1*saxUe7mImb1vBxHGRGIybw.png" alt="">
+  <img style="width: 100%;" src="./src/ss3.png" alt="">
+  <img style="width: 100%;" src="./src/ss4.png" alt="">
  </div>
 
 <h1 align="center"> <img style="width: 35px;" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt=""> Thank You <img style="width: 35px;" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt=""> <a href="#" target="_blank"> </a></h1>
